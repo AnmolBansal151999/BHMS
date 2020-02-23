@@ -7,10 +7,10 @@ float voltage = 0;
 float current = 0;
 float percentSOC = 0;
 
-#define FIREBASE_HOST "https://bhms-parallax.firebaseio.com/"
-#define FIREBASE_AUTH "QRYIDUg5KAaqd3TqjDyLnv1UTcfiEddvukW5kF5F"
-#define WIFI_SSID "Laxus"
-#define WIFI_PASSWORD "qwerty123567"
+#define FIREBASE_HOST "*********************"
+#define FIREBASE_AUTH "***************************"
+#define WIFI_SSID "*****"
+#define WIFI_PASSWORD "*******************"
 
 
 void setup() {
@@ -96,7 +96,7 @@ void loop() {
       return;
   }
 
- Firebase.setFloat("SOHe", SOH);
+ Firebase.setFloat("SOH", SOH);
   // handle error
   if (Firebase.failed()) {
       Serial.print("\nsetting SOH failed:");
